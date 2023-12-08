@@ -1,30 +1,18 @@
-# React + TypeScript + Vite
+# 📌 GitHub Finder
+Este projeto é uma aplicação web construída em React, utilizando Vite como bundler, TypeScript para uma tipagem mais robusta, e CSS Modules para estilos encapsulados. A principal funcionalidade do projeto é permitir que os usuários insiram o nome de um usuário do GitHub e visualizem detalhes do perfil, incluindo informações sobre seguidores, pessoas que estão sendo seguidas, localização, uma lista dos repositórios do usuário, e tudo isso é possível graças ao consumo da API do GitHub.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## ⚙️ Funcionalidades
+* **Visualização de Perfil:** Digite o nome de usuário do GitHub na barra de pesquisa para ver detalhes do perfil do usuário, incluindo avatar, nome de usuário, localização e estatísticas de seguidores/seguindo.
 
-Currently, two official plugins are available:
+* **Lista de Repositórios:** Além dos detalhes do perfil, a aplicação exibe uma lista dos repositórios públicos do usuário, permitindo aos usuários explorar e acessar os repositórios diretamente.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 💻 Tecnologias Utilizadas
+* **React:** Uma biblioteca JavaScript para construir interfaces de usuário reativas e eficientes.
 
-## Expanding the ESLint configuration
+* **Vite:** Um bundler rápido para projetos web modernos, configurado automaticamente para aplicações React.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+* **TypeScript:** Uma linguagem de programação que adiciona tipagem estática ao JavaScript, proporcionando uma experiência de desenvolvimento mais segura e produtiva.
 
-- Configure the top-level `parserOptions` property like this:
+* **CSS Modules:** Uma abordagem para escrever estilos CSS onde os nomes de classe são gerados automaticamente de forma única para evitar conflitos.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+* **Consumo da API do GitHub:** Utilizamos a API do GitHub para obter informações em tempo real sobre o perfil do usuário e seus repositórios.
