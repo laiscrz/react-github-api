@@ -1,9 +1,11 @@
 import { FaSpinner } from "react-icons/fa"
 
+import classes from "./loader.module.css"
+
 const Loader = () => {
     return (
         <>
-            <FaSpinner />
+            <FaSpinner className = {classes.loader}/>
         </>
     )
 }
