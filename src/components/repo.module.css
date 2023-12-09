@@ -1,8 +1,8 @@
 .repo{
-    background-color: #0e1129;
+    background-color: #A91079;
     padding: 2rem;
     border-radius: 10px;
-    border: 2px solid #9da5d1;
+    border: 2px solid #d19dc1;
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -21,12 +21,12 @@
     justify-content: center;
     gap: 0.4rem;
     border-radius: 3px;
-    border: 1px solid #9da5d1;
+    border: 1px solid #d19dc1;
     padding-right: 0.4rem;
 }
 
 .stats svg{
-    background-color: #4ed8c7;
+    background-color: #ff3d84;
     padding: 0.2rem 0.4rem;
     border-radius: 3px;
     font-size: 2rem;
@@ -36,8 +36,8 @@
     display: flex;
     align-items: center;
     padding: 0.5rem 1rem;
-    color: #9da5d1;
-    background-color: #2b3566;
+    color: #d19dc1;
+    background-color: #570A57;
     border-radius: 5px;
     gap: 0.5rem;
 }
