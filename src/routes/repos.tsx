@@ -4,6 +4,8 @@ import { RepoProps } from "../types/repo";
 import Loader from "../components/loader";
 import Repo from "../components/repo";
 
+import classes from "./repos.module.css"
+
 const Repos = () => {
     const { username } = useParams();
 
@@ -40,11 +42,11 @@ const Repos = () => {
     if (!repos && isLoading) return <Loader />
 
     return (
-        <div>
+        <div className={classes.repos}>
           <h2>Explore os repositórios do usuário: {username}</h2>
           {repos && repos.length === 0 && <p>Não há repositórios.</p>}
           {repos && repos.length > 0 && (
-            <div>
+            <div className={classes.repos_container}>
               {repos.map((repo: RepoProps) => (
                 <Repo key={repo.name} {...repo} />
               ))}
